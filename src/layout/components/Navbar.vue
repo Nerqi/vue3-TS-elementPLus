@@ -32,7 +32,7 @@
         <el-dropdown class="avatar-container" trigger="hover">
           <div class="avatar-wrapper">
             <el-avatar :src="avatar"></el-avatar>
-            <div class="nickname">{{ nickname + '1' }}</div>
+            <div class="nickname">{{ nickname }}</div>
           </div>
           <template #dropdown>
             <el-dropdown-menu class="user-dropdown">
