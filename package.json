@@ -7,7 +7,8 @@
     "prod": " vue-tsc --noEmit &&vite build",
     "serve": "vite preview",
     "lint": "eslint --ext .vue,.js,.ts ./",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sparrow": "sparrow start -m page"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
@@ -22,6 +23,7 @@
     "@fullcalendar/vue3": "^5.8.0",
     "@kangc/v-md-editor": "^2.3.4",
     "@rollup/plugin-commonjs": "^19.0.0",
+    "@sparrow-vue/develop-ui": "^0.2.0",
     "@tinymce/tinymce-vue": "^4.0.0",
     "@toast-ui/editor": "^3.0.0",
     "@toast-ui/vue-editor": "^3.0.0",
@@ -107,6 +109,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
+    "sparrow-code": "^0.6.4",
     "stylus": "^0.54.8",
     "typescript": "^4.1.3",
     "vue-tsc": "^0.0.24",

@@ -2,6 +2,7 @@
   <el-config-provider :locale="locale">
     <div id="app">
       <router-view></router-view>
+      <sparrow />
     </div>
   </el-config-provider>
 </template>
@@ -12,11 +13,11 @@ import { useStore } from '@/store/index'
 import { ElConfigProvider } from 'element-plus/lib/components/config-provider'
 import zhLocale from 'element-plus/lib/locale/lang/zh-cn'
 import enLocale from 'element-plus/lib/locale/lang/en'
-
+import Sparrow from '@sparrow-vue/develop-ui'
 export default defineComponent({
   name: 'App',
   components: {
-    ElConfigProvider
+    ElConfigProvider, Sparrow
   },
   setup() {
     const store = useStore()
